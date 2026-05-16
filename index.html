@@ -3,47 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  
+  <!-- SEO & Meta Tags -->
   <title>Modditech Designs — Design systems & digital products</title>
   <meta name="description" content="Design systems and digital product studio. We help tech companies ship scalable, measurable products with design systems that last.">
+  <meta name="theme-color" content="#0A2E36">
+  
+  <!-- Open Graph Tags -->
   <meta property="og:title" content="Modditech Designs — Design systems & digital products">
   <meta property="og:description" content="We partner with ambitious tech companies to craft digital products and the design systems that power them.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://modditech.design">
+  
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Modditech Designs">
   <meta name="twitter:description" content="Design systems & digital products for tech companies.">
 
+  <!-- Font Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Accessibility: Skip to main content link -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- Custom Cursor (decorative) -->
-  <div class="cursor" aria-hidden="true">
-    <div class="cursor__circle">
-      <div class="cursor__cross cursor__cross--h"></div>
-      <div class="cursor__cross cursor__cross--v"></div>
-    </div>
-  </div>
-
+  <!-- Site Header / Navigation -->
   <header class="site-header" id="header">
     <div class="container header-inner">
-      <a href="#" class="logo">Modditech</a>
-      <nav aria-label="Main navigation">
+      <a href="#" class="logo" aria-label="Modditech Designs home">Modditech</a>
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      
+      <!-- Navigation Menu -->
+      <nav class="mobile-menu" id="mobileMenu" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="#work">Work</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <!-- Main Content -->
   <main id="main-content">
+    
+    <!-- Hero Section -->
     <section class="hero container">
       <div class="hero-content">
         <h1 class="hero-headline">Design systems<br>that scale products</h1>
@@ -52,10 +68,12 @@
           <a href="#contact" class="btn btn-primary">Start a project</a>
         </div>
       </div>
-      <div class="hero-decoration hero-shape-1"></div>
-      <div class="hero-decoration hero-shape-2"></div>
+      <!-- Decorative shapes (hidden on mobile) -->
+      <div class="hero-decoration hero-shape-1" aria-hidden="true"></div>
+      <div class="hero-decoration hero-shape-2" aria-hidden="true"></div>
     </section>
 
+    <!-- Trusted By Section -->
     <div class="container">
       <div class="trusted-by">
         <span>Trusted by teams at</span>
@@ -66,6 +84,7 @@
       </div>
     </div>
 
+    <!-- Stats Section -->
     <div class="container">
       <div class="stats-bar" id="statsBar">
         <div class="stat-item">
@@ -91,11 +110,12 @@
       </div>
     </div>
 
+    <!-- Work / Projects Section -->
     <section id="work" class="container section-padding section-hidden">
       <h2 class="section-title">Recent work</h2>
       <div class="projects-grid" style="margin-top: var(--space-12);">
 
-        <!-- Card 1: AI Automation -->
+        <!-- Project Card 1: AI Automation -->
         <a href="https://modditechdesigns-ctrl.github.io/Malson/" target="_blank" rel="noopener noreferrer" class="card" data-metric="300 leads">
           <div class="card-img" style="background-image: url('project/maluson.png');"></div>
           <span class="card-category">AI Automation</span>
@@ -103,7 +123,7 @@
           <p class="card-desc">A prominent AI assistant is integrated into the site architecture to provide 24/7 client support and automated service inquiries.</p>
         </a>
 
-        <!-- Card 2: Restaurant -->
+        <!-- Project Card 2: Restaurant -->
         <a href="https://modditechdesigns-ctrl.github.io/savoria/" target="_blank" rel="noopener noreferrer" class="card" data-metric="300 leads">
           <div class="card-img" style="background-image: url('project/Savoria.png');"></div>
           <span class="card-category">Restaurant</span>
@@ -111,7 +131,7 @@
           <p class="card-desc">High-conversion web experience for Savoria, integrating seamless reservation system and elegant visual storytelling.</p>
         </a>
 
-        <!-- Card 3: Healthtech -->
+        <!-- Project Card 3: Healthtech -->
         <a href="https://kind-teeth-design.lovable.app" target="_blank" rel="noopener noreferrer" class="card" data-metric="300 leads">
           <div class="card-img" style="background-image: url('project/radiant smile landing page.png');"></div>
           <span class="card-category">Healthtech</span>
@@ -125,17 +145,21 @@
       </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services" class="container section-padding section-hidden">
       <h2 class="section-title">What we specialize in</h2>
       <div class="services-grid" style="margin-top: var(--space-12);">
+        
         <div class="service-item">
           <h3 class="service-title">Design Systems</h3>
           <p class="service-desc">We build scalable, well-documented systems that bridge design and engineering, so your product grows without breaking.</p>
         </div>
+        
         <div class="service-item">
           <h3 class="service-title">Product Design</h3>
           <p class="service-desc">From zero to launch, we design products that users understand and trust—backed by metrics, not just intuition.</p>
         </div>
+        
         <div class="service-item">
           <h3 class="service-title">Design Ops</h3>
           <p class="service-desc">We streamline your design workflows, tools, and collaboration patterns so your internal team moves faster.</p>
@@ -143,6 +167,7 @@
       </div>
     </section>
 
+    <!-- Process Section -->
     <section id="process" class="container section-padding section-hidden">
       <h2 class="section-title">How we work</h2>
       <p class="text-large" style="margin-top: var(--space-4); max-width: 660px;">
@@ -158,6 +183,7 @@
       </p>
     </section>
 
+    <!-- Testimonial Section -->
     <div class="container section-hidden">
       <div class="testimonial">
         <blockquote>
@@ -166,6 +192,7 @@
       </div>
     </div>
 
+    <!-- Contact / CTA Section -->
     <section id="contact" class="container section-hidden">
       <div class="cta-section">
         <h2 class="section-title">Let's make your product<br>feel inevitable</h2>
@@ -173,37 +200,64 @@
           Tell us about your project. We'll listen carefully, then help you build something that works beautifully.
         </p>
 
-        <!-- Contact form – submits to Formspree without page reload -->
-        <form id="contactForm" action="https://formspree.io/f/mnjweaoj" method="POST">
-          <!-- Optional honeypot spam protection -->
-          <input type="text" name="_gotcha" style="display:none">
+        <!-- Contact Form -->
+        <form id="contactForm" action="https://formspree.io/f/mnjweaoj" method="POST" novalidate>
+          <!-- Honeypot spam protection -->
+          <input type="text" name="_gotcha" style="display:none" aria-hidden="true">
 
-          <label for="email" class="sr-only">Your email</label>
-          <input type="email" name="email" id="email" placeholder="Your email" required />
+          <!-- Email Input -->
+          <div class="form-group">
+            <label for="email" class="sr-only">Your email</label>
+            <input 
+              type="email" 
+              name="email" 
+              id="email" 
+              placeholder="Your email" 
+              required 
+              aria-required="true"
+              autocomplete="email"
+            />
+          </div>
 
-          <label for="message" class="sr-only">Your message</label>
-          <textarea name="message" id="message" placeholder="Tell us about your project" required></textarea>
+          <!-- Message Textarea -->
+          <div class="form-group">
+            <label for="message" class="sr-only">Your message</label>
+            <textarea 
+              name="message" 
+              id="message" 
+              placeholder="Tell us about your project" 
+              required 
+              aria-required="true" 
+              rows="5"
+              autocomplete="off"
+            ></textarea>
+          </div>
 
+          <!-- Submit Button -->
           <button type="submit" class="btn btn-primary">Send message</button>
-          <div id="form-status" class="form-status" aria-live="polite"></div>
+          
+          <!-- Form Status Messages -->
+          <div id="form-status" class="form-status" aria-live="polite" aria-atomic="true"></div>
         </form>
       </div>
     </section>
   </main>
 
+  <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container footer-content">
       <p class="copyright">© 2026 Modditech Designs — Agabe Martins</p>
       <ul class="footer-links">
-        <li><a href="https://www.linkedin.com/in/moddi-tech-designs-58a114392">LinkedIn</a></li>
-        <li><a href="https://github.com/modditechdesigns-ctrl">GitHub</a></li>
-        <li><a href="https://x.com/Moddifounder">Twitter</a></li>
-        <li><a href="https://www.instagram.com/modditech/">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/moddi-tech-designs-58a114392" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/modditechdesigns-ctrl" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://x.com/Moddifounder" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+        <li><a href="https://www.instagram.com/modditech/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
         <li><a href="mailto:modditechdesigns@gmail.com">Email</a></li>
       </ul>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
 </body>
 </html>
