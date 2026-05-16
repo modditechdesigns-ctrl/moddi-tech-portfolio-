@@ -18,7 +18,7 @@
   --white: #FFFFFF;
 
   --bg-primary: var(--warm);
-  --bg-card: var(--white);
+  --bg-card: var(--white)
   --text-primary: var(--teal-900);
   --text-body: var(--charcoal);
   --accent: var(--coral);
